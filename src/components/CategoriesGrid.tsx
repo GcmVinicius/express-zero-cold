@@ -20,7 +20,7 @@ const CategoriesGrid = () => {
   return (
     <section className="py-20">
       <div className="container">
-        <p className="text-sm font-semibold uppercase tracking-widest text-primary">Categorias</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">Categorias</p>
         <h2 className="mt-2 font-display text-3xl font-extrabold md:text-4xl">
           Principais Produtos
         </h2>
@@ -29,7 +29,7 @@ const CategoriesGrid = () => {
             <Link
               key={cat.slug}
               to={`/categoria/${cat.slug}`}
-              className="group relative overflow-hidden rounded-xl shadow-card"
+              className="group relative overflow-hidden rounded-xl border border-accent/20 shadow-card transition-transform hover:scale-[1.02]"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="aspect-[4/3] overflow-hidden">
@@ -44,7 +44,7 @@ const CategoriesGrid = () => {
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h3 className="font-display text-xl font-bold text-foreground">{cat.name}</h3>
+                <h3 className="font-display text-xl font-bold text-accent">{cat.name}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{cat.description}</p>
               </div>
             </Link>
