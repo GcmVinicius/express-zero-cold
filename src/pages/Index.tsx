@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import MobileNav from "@/components/MobileNav";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 import CategoriesGrid from "@/components/CategoriesGrid";
 import MapSection from "@/components/MapSection";
 
@@ -10,6 +11,7 @@ const Index = () => {
       <Header />
       <main className="pt-16">
         <HeroSection />
+        <AboutSection />
         <CategoriesGrid />
         <MapSection />
       </main>

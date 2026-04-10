@@ -14,7 +14,7 @@ const CategoryPage = () => {
       <div className="flex min-h-screen items-center justify-center bg-background">
         <div className="text-center">
           <h1 className="font-display text-2xl font-bold">Categoria não encontrada</h1>
-          <Link to="/produtos" className="mt-4 inline-block text-primary hover:underline">
+          <Link to="/produtos" className="mt-4 inline-block text-accent hover:underline">
             Voltar aos produtos
           </Link>
         </div>
@@ -35,7 +35,7 @@ const CategoryPage = () => {
         </Link>
 
         <div className="mt-6">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">{category.name}</p>
+          <p className="text-sm font-semibold uppercase tracking-widest text-accent">{category.name}</p>
           <h1 className="mt-2 font-display text-4xl font-extrabold">{category.name}</h1>
           <p className="mt-2 text-muted-foreground">{category.description}</p>
         </div>
@@ -44,7 +44,7 @@ const CategoryPage = () => {
           {categoryProducts.map((product) => (
             <div
               key={product.id}
-              className="rounded-xl border border-border bg-card p-5 shadow-card transition-colors hover:border-primary/30"
+              className="rounded-xl border border-accent/20 bg-card p-5 shadow-card transition-colors hover:border-accent/50"
             >
               <h3 className="font-display text-lg font-bold text-card-foreground">{product.name}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{product.description}</p>
@@ -52,7 +52,7 @@ const CategoryPage = () => {
                 href={getWhatsAppLink(product.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center gap-2 rounded-lg bg-gradient-frost px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+                className="mt-4 inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:scale-105"
               >
                 <MessageCircle className="h-4 w-4" />
                 Pedir via WhatsApp

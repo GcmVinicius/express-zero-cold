@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
-import { Snowflake } from "lucide-react";
+import logoImg from "@/assets/logo-zerograu.png";
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-accent/30 bg-accent">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <Snowflake className="h-7 w-7 text-primary" />
-          <span className="font-display text-xl font-extrabold text-foreground">Zero Grau</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logoImg} alt="Zero Grau" className="h-10 object-contain" />
+          <span className="font-display text-xl font-extrabold text-blue">ZERO GRAU</span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
-          <Link to="/" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          <Link to="/" className="text-sm font-semibold text-accent-foreground/70 transition-colors hover:text-accent-foreground">
             Início
           </Link>
-          <Link to="/produtos" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          <a href="#quem-somos" className="text-sm font-semibold text-accent-foreground/70 transition-colors hover:text-accent-foreground">
+            Quem Somos
+          </a>
+          <Link to="/produtos" className="text-sm font-semibold text-accent-foreground/70 transition-colors hover:text-accent-foreground">
             Produtos
           </Link>
         </nav>
@@ -21,7 +24,7 @@ const Header = () => {
           href="https://wa.me/5561934850010"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-gradient-frost px-4 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
+          className="rounded-lg bg-blue px-4 py-2 text-sm font-semibold text-blue-foreground transition-transform hover:scale-105"
         >
           WhatsApp
         </a>
