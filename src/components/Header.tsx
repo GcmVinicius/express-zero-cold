@@ -5,9 +5,17 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-accent/30 bg-accent">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-black uppercase tracking-tight text-blue" style={{ fontFamily: "'Impact', 'Arial Black', sans-serif", letterSpacing: '1px' }}>
-            ZERO GRAU
-          </span>
+            <span
+              className="text-2xl font-black uppercase tracking-tight text-blue"
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                letterSpacing: '1px',
+                WebkitTextStroke: '1px white',
+                paintOrder: 'stroke fill',
+              }}
+            >
+              ZERO GRAU
+            </span>
         </Link>
         <nav className="hidden items-center gap-6 md:flex">
           <Link to="/" className="text-sm font-semibold text-accent-foreground/70 transition-colors hover:text-accent-foreground">
