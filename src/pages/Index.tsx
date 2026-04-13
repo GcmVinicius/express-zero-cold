@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import CategoriesGrid from "@/components/CategoriesGrid";
 import MapSection from "@/components/MapSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <AboutSection />
         <CategoriesGrid />
         <MapSection />
+        <Footer />
       </main>
       <MobileNav />
     </div>
