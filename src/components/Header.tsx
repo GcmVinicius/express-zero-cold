@@ -10,7 +10,7 @@ const Header = () => {
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
                 letterSpacing: '1px',
-                WebkitTextStroke: '1px white',
+                WebkitTextStroke: '2px white',
                 paintOrder: 'stroke fill',
               }}
             >
