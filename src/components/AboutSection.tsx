@@ -1,4 +1,4 @@
-import { Store, Truck, Clock, Users, MapPin, Phone } from "lucide-react";
+import { Truck, Clock } from "lucide-react";
 import estabelecimentoImg from "@/assets/estabelecimento.png";
 
 const AboutSection = () => {
@@ -34,16 +34,6 @@ const AboutSection = () => {
             <p className="mt-4 text-muted-foreground leading-relaxed text-base">
               Contamos com <span className="font-semibold">tele-entrega</span> rápida, atendimento em horário estendido e uma equipe sempre pronta para te receber com o melhor sorriso. Venha nos visitar!
             </p>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 text-accent" />
-                Grande Colorado, Brasília - DF
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <Phone className="h-4 w-4 text-accent" />
-                3485-0010
-              </div>
-            </div>
           </div>
         </div>
 
