@@ -15,6 +15,7 @@ const Index = () => {
         <AboutSection />
         <CategoriesGrid />
         <MapSection />
+        <Footer />
       </main>
       <MobileNav />
     </div>
